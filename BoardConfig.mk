@@ -57,7 +57,7 @@ BOARD_BOOTIMAGE_PARTITION_SIZE := 4194304
 BOARD_FLASH_BLOCK_SIZE := 262144
 
 # Keep ro.product.device as ace to keep camera blobs happy.
-TARGET_VENDOR_DEVICE_NAME := ace
+# TARGET_VENDOR_DEVICE_NAME := ace
 # But use aceopt for updater-script assert check
 TARGET_OTA_ASSERT_DEVICE := aceopt
 
@@ -96,7 +96,7 @@ TW_INCLUDE_CRYPTO := true
 TW_NO_SCREEN_BLANK := true
 TW_INCLUDE_DUMLOCK := true
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
-#RECOVERY_VARIANT := twrp
+RECOVERY_VARIANT := twrp
 TW_NO_USB_STORAGE := true
 TW_NO_CPU_TEMP := true
 BOARD_CHARGING_MODE_BOOTING_LPM := /sys/htc_lpm/lpm_mode
